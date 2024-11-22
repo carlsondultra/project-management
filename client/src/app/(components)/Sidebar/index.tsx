@@ -64,23 +64,15 @@ interface SidebarLinkProps {
     href: string
     icon: LucideIcon
     label: string
-    // isCollapsed: boolean
 }
 
 const SidebarLink = ({
     href,
     icon: Icon,
     label,
-    // isCollapsed,
 }: SidebarLinkProps) => {
     const pathname = usePathname()
     const isActive = pathname === href || (pathname === "/" && href === "/dashboard")
-    const screenWidth = window.innerWidth
-
-    const dispatch = useAppDispatch()
-    const isSidebarCollapsed = useAppSelector(
-        (state) => state.global.isSidebarCollapsed,
-    )
 
     return (
         <Link href={href} className="w-full">
