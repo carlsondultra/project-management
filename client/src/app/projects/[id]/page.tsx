@@ -13,7 +13,7 @@ const Project = ({ params }: Props) => {
   const [isModalNewTaskOpen, setIsModalNewTaskOpen] = useState(false)
 
   return <div>
-    {/* <ProjectHeader activeTab={activeTab} setActiveTab = {setActiveTab} /> */}
+    <ProjectHeader activeTab={activeTab} setActiveTab = {setActiveTab} />
     {/* { activeTab === "Board" && (
         <Board />
     )} */}
