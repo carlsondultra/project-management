@@ -95,11 +95,11 @@ export const api = createApi({
         updateTaskStatus: build.mutation<Task, { taskId: number; status: string }>({
             query: ({ taskId, status }) => ({
               url: `tasks/${taskId}/status`,
-              method: "POST",
+              method: "PATCH",
               body: { status },
             }),
-            invalidatesTags: (result, error, {taskId}) => [
-                { type: "Tasks", id: taskId },
+            invalidatesTags: (result, error, { taskId }) => [
+              { type: "Tasks", id: taskId },
             ],
           }),
     }),
