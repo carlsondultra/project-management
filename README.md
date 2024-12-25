@@ -1,18 +1,12 @@
 ## Getting Started
 
-First, run the development server:
+Ensure you have these tools installed:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Git
+- Node.js
+- npm (Node Package Manager)
+- PostgreSQL
+- PgAdmin
 
 ## Technology Stack
 
