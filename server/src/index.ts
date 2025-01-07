@@ -12,6 +12,8 @@ import searchRoutes from "./routes/searchRoutes"
 import userRoutes from "./routes/userRoutes"
 import teamRoutes from "./routes/teamRoutes"
 
+import { PrismaClient } from "@prisma/client";
+
 // configurations
 dotenv.config()
 const app = express()
@@ -33,10 +35,6 @@ app.use("/tasks", taskRoutes)
 app.use("/search", searchRoutes)
 app.use("/users", userRoutes)
 app.use("/teams", teamRoutes)
-
-app.post("/create-user", async (req: Request, res: Response) => {
-    
-})
 
 // server
 const port = Number(process.env.PORT) || 3000
